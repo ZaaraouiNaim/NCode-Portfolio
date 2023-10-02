@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="ncode, front-end development, portfolio, portfolio design, portfolio website, personal portfolio"
+    />
+    <meta
+      name="description"
+      content="Welcome to NCode: We're an independent design and development agency"
+    />
+    <title>NCode | We Make Modern, Clean and Creative Designs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- GLIGHTBOX LIBRARY -->
+    <link rel="stylesheet" href="lib/glightbox/glightbox.min.css" />
+    <!-- AOS LIBRARY -->
+    <link rel="stylesheet" href="lib/aos/aos.css" />
+    <!-- SWIPER LIBRARY -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+    <!-- MAIN CSS FILE -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-theme="light">
+    <!-------- Start Header --------->
+    <header id="header" class="header fixed-top">
+      <div id="top-bar" class="top-bar nc-bg-primary">
+        <div class="container">
+          <div class="row row-cols-md-2 py-3">
+            <div class="text-center text-md-start text-white mb-3 mb-md-0">
+              Love our work? Let's work together
+            </div>
+            <div class="text-center text-md-end">
+              <a href="#contact" class="scrollto nc-btn text-white"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav id="navbar" class="navbar navbar-expand-lg nc-trans-04">
+        <div class="container">
+          <a href="index.html" class="navbar-brand nav-logo">
+            <span
+              class="d-inline-block fs-4 fw-bold text-center nc-bg-primary text-white overflow-hidden"
+              >NC</span
+            >
+            <span class="h3 fw-bold nc-txt-primary">NCode</span>
+          </a>
+          <button
+            class="navbar-toggler shadow-none nc-txt-blue rounded-0 border-0"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#main-nav"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div id="main-nav" class="offcanvas offcanvas-start nc-bg-white">
+            <div class="offcanvas-header nc-bg-primary">
+              <a href="#" class="offcanvas-title nav-logo">
+                <span
+                  class="d-inline-block me-1 fs-4 fw-bold text-center bg-white nc-txt-primary overflow-hidden"
+                  >NC</span
+                ><span class="h3 fw-bold text-white">NCode</span>
+              </a>
+              <i
+                class="fa fa-x btn fs-4 text-white"
+                data-bs-dismiss="offcanvas"
+              ></i>
+            </div>
+            <div class="offcanvas-body">
+              <ul
+                class="navbar-nav ms-auto align-items-lg-center gap-2 gap-lg-0"
+              >
+                <li>
+                  <a
+                    href="#hero"
+                    class="nav-link scrollto position-relative d-block fw-semibold nc-fs-7 text-uppercase me-3 nc-txt-blue"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="nav-link scrollto position-relative d-block fw-semibold nc-fs-7 text-uppercase me-3 nc-txt-blue"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#skills"
+                    class="nav-link scrollto position-relative d-block fw-semibold nc-fs-7 text-uppercase me-3 nc-txt-blue"
+                    >Skills</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="nav-link scrollto position-relative d-block fw-semibold nc-fs-7 text-uppercase me-3 nc-txt-blue"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="nav-link scrollto position-relative d-block fw-semibold nc-fs-7 text-uppercase me-3 nc-txt-blue"
+                    >Contact</a
+                  >
+                </li>
+                <li
+                  class="mode-toggler ms-0 ms-lg-3 mt-4 mt-lg-0 position-relative nc-flex-center nc-bg-primary text-white rounded-1"
+                >
+                  <i
+                    id="dark"
+                    class="fa fa-cloud-sun fa-lg mode-icon position-absolute opacity-0"
+                  ></i>
+                  <i
+                    id="light"
+                    class="fa fa-cloud-moon fa-lg mode-icon position-absolute opacity-0 active"
+                  ></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-------- End Header --------->
+    <!-------- Start Main --------->
+    <main id="main">
+      <!-------- Start Hero --------->
+      <section
+        id="hero"
+        class="hero text-center text-lg-start d-flex align-items-center"
+      >
+        <div class="container">
+          <div class="row row-cols-lg-2 align-items-center h-100">
+            <div class="hero-text order-1 order-lg-0" data-aos="fade-up">
+              <h1
+                class="display-5 lh-base fw-bolder nc-txt-blue text-uppercase"
+              >
+                Hi There,<br />
+                We're <span class="nc-txt-secondary">NCode</span>
+              </h1>
+              <h3 class="fw-semibold my-3 d-none d-lg-block">
+                We Make
+                <span class="fw-bold nc-txt-primary">Web</span>
+                Designs
+              </h3>
+              <p>
+                We're an independent design and development agency with
+                experience in web design, brand identity and product design.
+              </p>
+              <a
+                href="#contact"
+                class="scrollto section-btn d-inline-block p-3 mt-4 fw-semibold text-uppercase nc-txt-secondary"
+                >Connect With Us</a
+              >
+            </div>
+            <div
+              class="hero-img order-0 order-lg-1 mb-3 mb-lg-0 text-center text-lg-end"
+              data-aos="zoom-in"
+            >
+              <img
+                src="imgs/hero.png"
+                alt="hero image"
+                class="img-fluid object-fit-cover rounded-pill"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------- End Hero --------->
+      <!-------- Start About ------>
+      <section id="about" class="about nc-bg-section" data-aos="fade-up">
+        <h2 class="nc-heading">
+          <i class="fas fa-user-tie me-2"></i>About
+          <span class="nc-txt-secondary">Us</span>
+        </h2>
+        <div class="container py-4">
+          <div class="row row-cols-lg-2">
+            <div
+              class="about-img mb-4 mb-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src="imgs/about.jpg"
+                alt="about image"
+                class="img-fluid object-fit-cover rounded-3"
+              />
+            </div>
+            <div
+              class="about-text ps-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3 class="fs-2 fw-bold nc-txt-blue">We're NCode</h3>
+              <h4 class="fs-5 fw-medium nc-txt-blue mt-2 mb-3">
+                Front-End Web Development Agency
+              </h4>
+              <p>
+                We are very passionate about improving our coding skills &
+                developing applications & websites with modern layout and clean
+                code. We build WebApps and Websites using various and new
+                front-end web technologies.
+              </p>
+              <a
+                href="#contact"
+                class="scrollto section-btn d-inline-block mt-4"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------- End About -------->
+      <!-------- Start Skills ------>
+      <section id="skills" class="skills" data-aos="fade-up">
+        <h2 class="nc-heading">
+          <i class="fa fa-laptop-code me-2"></i>Skills &
+          <span class="nc-txt-secondary">Abilites</span>
+        </h2>
+        <div class="container" data-aos="fade-up">
+          <div class="row row-cols-lg-2 align-items-center">
+            <div class="skills-text order-1 order-lg-0" data-aos="fade-up">
+              <h3 class="fs-4 fw-bold nc-txt-blue text-uppercase">
+                Our Skills
+              </h3>
+              <p class="fw-medium text-secondary mb-3">
+                Get Best Solutions with our Professional Team
+              </p>
+              <div class="skills-wrapper row row-cols-2 row-cols-sm-4">
+                <div class="skill mb-3">
+                  <h6
+                    class="fw-semibold d-flex align-items-center justify-content-between px-1 mb-2 nc-fs-7 nc-txt-blue"
+                  >
+                    HTML5
+                  </h6>
+                  <div
+                    class="progress-wrap nc-bg-section position-relative d-flex align-items-end"
+                  >
+                    <img
+                      src="imgs/skills/html5.png"
+                      alt="skill image"
+                      class="position-absolute top-0 start-50 translate-middle-x"
+                    />
+                    <div class="progress-bar w-100" data-progress="90%"></div>
+                  </div>
+                </div>
+                <div class="skill mb-3">
+                  <h6
+                    class="fw-semibold d-flex align-items-center justify-content-between px-1 mb-2 nc-fs-7 nc-txt-blue"
+                  >
+                    CSS3
+                  </h6>
+                  <div
+                    class="progress-wrap nc-bg-section position-relative d-flex align-items-end"
+                  >
+                    <img
+                      src="imgs/skills/css3.png"
+                      alt="skill image"
+                      class="position-absolute top-0 start-50 translate-middle-x"
+                    />
+                    <div class="progress-bar w-100" data-progress="85%"></div>
+                  </div>
+                </div>
+                <div class="skill mb-3">
+                  <h6
+                    class="fw-semibold d-flex align-items-center justify-content-between px-1 mb-2 nc-fs-7 nc-txt-blue"
+                  >
+                    JAVASCRIPT
+                  </h6>
+                  <div
+                    class="progress-wrap nc-bg-section position-relative d-flex align-items-end"
+                  >
+                    <img
+                      src="imgs/skills/javascript.png"
+                      alt="skill image"
+                      class="position-absolute top-0 start-50 translate-middle-x"
+                    />
+                    <div class="progress-bar w-100" data-progress="80%"></div>
+                  </div>
+                </div>
+                <div class="skill mb-3">
+                  <h6
+                    class="fw-semibold d-flex align-items-center justify-content-between px-1 mb-2 nc-fs-7 nc-txt-blue"
+                  >
+                    BOOTSTRAP
+                  </h6>
+                  <div
+                    class="progress-wrap nc-bg-section position-relative d-flex align-items-end"
+                  >
+                    <img
+                      src="imgs/skills/bootstrap.png"
+                      alt="skill image"
+                      class="position-absolute top-0 start-50 translate-middle-x"
+                    />
+                    <div class="progress-bar w-100" data-progress="95%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="section-btn d-inline-block mt-4">Show More</a>
+            </div>
+            <div
+              class="skills-img mb-4 mb-lg-0 text-center text-lg-end order-0 order-lg-1"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src="imgs/skills.jpeg"
+                alt="skills image"
+                class="img-fluid rounded-3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--------- End Skills ----------->
+      <!-------- Start Portfolio ------>
+      <section
+        id="portfolio"
+        class="portfolio nc-bg-section text-center"
+        data-aos="fade-up"
+      >
+        <h2 class="nc-heading">
+          <i class="fas fa-briefcase me-2"></i>Our
+          <span class="nc-txt-secondary">Work</span>
+        </h2>
+        <div class="container" data-aos="fade-up">
+          <div class="swiper projects">
+            <div class="swiper-wrapper projects-wrapper">
+              <div class="swiper-slide project card position-relative">
+                <div
+                  class="proj-img w-100 h-100 position-relative overflow-hidden nc-bg-blue"
+                >
+                  <img
+                    src="imgs/portfolio/ncode.jpeg"
+                    alt="project image"
+                    class="h-100 w-100 object-fit-contain nc-trans-04"
+                  />
+                </div>
+                <div
+                  class="proj-details card-body position-absolute nc-bg-blue nc-txt-white p-3 nc-trans-04 z-2"
+                >
+                  <h4 class="proj-title fw-semibold">NCode Design</h4>
+                  <p class="opacity-75 nc-fs-7 mt-2 mb-4">
+                    This Website Is Specially Build To Showcase Some Powerful Js
+                    & CSS Libraries That Make Website More Attractive.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="nc-btn me-3"
+                      ><i class="fa fa-eye me-2"></i>View</a
+                    >
+                    <a href="#" class="nc-btn"
+                      >Code<i class="fa fa-code ms-2"></i
+                    ></a>
+                    <a
+                      href="imgs/portfolio/ncode.jpeg"
+                      class="glightbox d-block nc-txt-white ms-auto"
+                      ><i class="fa fa-maximize"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project card position-relative">
+                <div
+                  class="proj-img w-100 h-100 position-relative overflow-hidden nc-bg-blue"
+                >
+                  <img
+                    src="imgs/portfolio/dashboard.jpeg"
+                    alt="project image"
+                    class="h-100 w-100 object-fit-contain nc-trans-04"
+                  />
+                </div>
+                <div
+                  class="proj-details card-body position-absolute nc-bg-blue nc-txt-white p-3 nc-trans-04 z-2"
+                >
+                  <h4 class="proj-title fw-semibold">Admin Dashboard</h4>
+                  <p class="opacity-75 nc-fs-7 mt-2 mb-4">
+                    Admin Dashboard Made With HTML, CSS & JAVASCRIPT Only,
+                    Mobile Friendly & Ready To Use For Business.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="nc-btn me-3"
+                      ><i class="fa fa-eye me-2"></i>View</a
+                    >
+                    <a href="#" class="nc-btn"
+                      >Code<i class="fa fa-code ms-2"></i
+                    ></a>
+                    <a
+                      href="imgs/portfolio/dashboard.jpeg"
+                      class="glightbox d-block nc-txt-white ms-auto"
+                      ><i class="fa fa-maximize"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project card position-relative">
+                <div
+                  class="proj-img w-100 h-100 position-relative overflow-hidden nc-bg-blue"
+                >
+                  <img
+                    src="imgs/portfolio/school.jpeg"
+                    alt="project image"
+                    class="h-100 w-100 object-fit-contain nc-trans-04"
+                  />
+                </div>
+                <div
+                  class="proj-details card-body position-absolute nc-bg-blue nc-txt-white p-3 nc-trans-04 z-2"
+                >
+                  <h4 class="proj-title fw-semibold">Private School Website</h4>
+                  <p class="opacity-75 nc-fs-7 mt-2 mb-4">
+                    Attractive Template Made As Offical Website For A Private
+                    School. Different Front-End Technologies Were Used In This
+                    Project.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="nc-btn me-3"
+                      ><i class="fa fa-eye me-2"></i>View</a
+                    >
+                    <a href="#" class="nc-btn"
+                      >Code<i class="fa fa-code ms-2"></i
+                    ></a>
+                    <a
+                      href="imgs/portfolio/school.jpeg"
+                      class="glightbox d-block nc-txt-white ms-auto"
+                      ><i class="fa fa-maximize"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project card position-relative">
+                <div
+                  class="proj-img w-100 h-100 position-relative overflow-hidden nc-bg-blue"
+                >
+                  <img
+                    src="imgs/portfolio/bondi.jpeg"
+                    alt="project image"
+                    class="h-100 w-100 object-fit-contain nc-trans-04"
+                  />
+                </div>
+                <div
+                  class="proj-details card-body position-absolute nc-bg-blue nc-txt-white p-3 nc-trans-04 z-2"
+                >
+                  <h4 class="proj-title fw-semibold">Bondi Design</h4>
+                  <p class="opacity-75 nc-fs-7 mt-2 mb-4">
+                    This Website Is Specially Build To Showcase Some Powerful
+                    Utilities And Components Of Bootstrap 5.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="nc-btn me-3"
+                      ><i class="fa fa-eye me-2"></i>View</a
+                    >
+                    <a href="#" class="nc-btn"
+                      >Code<i class="fa fa-code ms-2"></i
+                    ></a>
+                    <a
+                      href="imgs/portfolio/bondi.jpeg"
+                      class="glightbox d-block nc-txt-white ms-auto"
+                      ><i class="fa fa-maximize"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project card position-relative">
+                <div
+                  class="proj-img w-100 h-100 position-relative overflow-hidden nc-bg-blue"
+                >
+                  <img
+                    src="imgs/portfolio/elitecorp.jpeg"
+                    alt="project image"
+                    class="h-100 w-100 object-fit-contain nc-trans-04"
+                  />
+                </div>
+                <div
+                  class="proj-details card-body position-absolute nc-bg-blue nc-txt-white p-3 nc-trans-04 z-2"
+                >
+                  <h4 class="proj-title fw-semibold">EliteCorp.</h4>
+                  <p class="opacity-75 nc-fs-7 mt-2 mb-4">
+                    Nice Template Made With HTML, CSS & JAVASCRIPT Only, Mobile
+                    Friendly & Ready To Use For Business.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="nc-btn me-3"
+                      ><i class="fa fa-eye me-2"></i>View</a
+                    >
+                    <a href="#" class="nc-btn"
+                      >Code<i class="fa fa-code ms-2"></i
+                    ></a>
+                    <a
+                      href="imgs/portfolio/elitecorp.jpeg"
+                      class="glightbox d-block nc-txt-white ms-auto"
+                      ><i class="fa fa-maximize"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide project card position-relative">
+                <div
+                  class="proj-img w-100 h-100 position-relative overflow-hidden nc-bg-blue"
+                >
+                  <img
+                    src="imgs/portfolio/web_school.jpeg"
+                    alt="project image"
+                    class="h-100 w-100 object-fit-contain nc-trans-04"
+                  />
+                </div>
+                <div
+                  class="proj-details card-body position-absolute nc-bg-blue nc-txt-white p-3 nc-trans-04 z-2"
+                >
+                  <h4 class="proj-title fw-semibold">Web Courses Website</h4>
+                  <p class="opacity-75 nc-fs-7 mt-2 mb-4">
+                    Attractive Template Made With Different Front-End
+                    Technologies.
+                  </p>
+                  <div class="d-flex align-items-center">
+                    <a href="#" class="nc-btn me-3"
+                      ><i class="fa fa-eye me-2"></i>View</a
+                    >
+                    <a href="#" class="nc-btn"
+                      >Code<i class="fa fa-code ms-2"></i
+                    ></a>
+                    <a
+                      href="imgs/portfolio/web_school.jpeg"
+                      class="glightbox d-block nc-txt-white ms-auto"
+                      ><i class="fa fa-maximize"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev swiper-btn nc-trans-04"></div>
+            <div class="swiper-button-next swiper-btn nc-trans-04"></div>
+          </div>
+          <div class="swiper-pagination pagination"></div>
+          <a href="#" class="section-btn d-inline-block mt-5">View All</a>
+        </div>
+      </section>
+      <!-------- End Portfolio --------->
+      <!-------- Start Contact -------->
+      <section id="contact" class="contact" data-aos="fade-up">
+        <h2 class="nc-heading">
+          <i class="fas fa-headset me-2"></i>Get In
+          <span class="nc-txt-secondary">Touch</span>
+        </h2>
+        <div class="container">
+          <div class="row row-cols-lg-2 align-items-center">
+            <div
+              class="contact-img text-center text-lg-start mb-4 mb-lg-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                src="imgs/contact.png"
+                alt="contact image"
+                class="img-fluid object-fit-cover"
+              />
+            </div>
+            <div class="contact-text" data-aos="fade-up" data-aos-delay="200">
+              <form action="#" class="form">
+                <h4 class="fw-bold text-uppercase nc-txt-blue mb-3">
+                  Send Us a Message
+                </h4>
+                <p class="nc-fs-7">
+                  Get In Touch With Us Via Mail If You Have Any Question To Ask
+                  Or Work To Be Done For You. We Are Waiting For Your Call Or
+                  Message
+                </p>
+                <div class="input-group mb-3">
+                  <span class="input-group-text"
+                    ><i class="fa fa-user-pen nc-txt-white"></i
+                  ></span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Name..."
+                  />
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text"
+                    ><i class="fa fa-envelope-open-text nc-txt-white"></i
+                  ></span>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email..."
+                  />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fas fa-contact-card nc-txt-white"></i
+                  ></span>
+                  <textarea
+                    class="form-control"
+                    placeholder="Message..."
+                  ></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    class="section-btn d-inline-block mt-3 nc-bg-white nc-trans-04"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------- End Contact -------->
+    </main>
+    <!-------- End Main --------->
+    <!-------- Start Footer ------->
+    <footer id="footer" class="nc-bg-blue nc-txt-white pt-5 pb-3">
+      <div class="container">
+        <div class="row row-cols-md-2 row-cols-lg-4">
+          <div class="footer-info mb-4">
+            <h4 class="fw-bold text-uppercase mb-4">NCode's Portfolio</h4>
+            <p class="opacity-75">
+              Thank you for visiting our personal portfolio website. Connect
+              with us over socials.
+            </p>
+            <p class="opacity-75">
+              Keep Rising. Connect with us over live chat!
+            </p>
+          </div>
+          <div class="footer-links mb-4">
+            <h4 class="fw-bold text-uppercase mb-4">Quick links</h4>
+            <ul class="info p-0">
+              <li class="mb-2">
+                <a href="#" class="d-block nc-txt-white nc-trans-04"
+                  ><i class="fa fa-angle-right me-2 nc-txt-secondary"></i>
+                  Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="d-block nc-txt-white nc-trans-04"
+                  ><i class="fa fa-angle-right me-2 nc-txt-secondary"></i>
+                  About</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="d-block nc-txt-white nc-trans-04"
+                  ><i class="fa fa-angle-right me-2 nc-txt-secondary"></i>
+                  Skills</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="d-block nc-txt-white nc-trans-04"
+                  ><i class="fa fa-angle-right me-2 nc-txt-secondary"></i>
+                  Portfolio</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="d-block nc-txt-white nc-trans-04"
+                  ><i class="fa fa-angle-right me-2 nc-txt-secondary"></i>
+                  Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact mb-4">
+            <h4 class="fw-bold text-uppercase mb-4">Contact Us</h4>
+            <ul class="p-0">
+              <li class="mb-2">
+                <i class="fa fa-map-location me-2"></i>
+                Sidi Bouzid, Tunisia
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-envelope-circle-check me-2"></i>
+                ncode@info.com
+              </li>
+              <li class="mb-2">
+                <i class="fa fa-phone-volume me-2"></i>
+                +216 22 000 000
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social mb-4">
+            <h4 class="fw-bold text-uppercase mb-4">Connect Us</h4>
+            <ul class="p-0 d-flex flex-wrap gap-2">
+              <li>
+                <a href="#" class="nc-flex-center fs-5 section-btn"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="nc-flex-center fs-5 section-btn"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="nc-flex-center fs-5 section-btn"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="nc-flex-center fs-5 section-btn"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row pt-3 border-top">
+          <div class="copyright fw-bold text-center">
+            Made with <span class="nc-txt-secondary fs-4">&hearts;</span> By
+            <span class="fs-5 nc-txt-secondary">NCode</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-------- End Footer ------->
+    <!-------- Preloader -------->
+    <div
+      id="preloader"
+      class="position-fixed top-0 start-0 nc-flex-center w-100 h-100 nc-bg-blue"
+    >
+      <span class="d-block rounded-circle"></span>
+    </div>
+    <!------ Back to Top Button --------->
+    <span
+      class="back-to-top position-fixed d-block fs-2 nc-txt-secondary nc-trans-04"
+      ><i class="fa fa-chevron-circle-up"></i
+    ></span>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="lib/glightbox/glightbox.min.js"></script>
+    <script src="lib/aos/aos.js"></script>
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <!-- MAIN JS FILE -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
